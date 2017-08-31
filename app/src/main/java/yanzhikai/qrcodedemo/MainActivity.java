@@ -36,6 +36,8 @@ public class MainActivity extends AppCompatActivity {
                 intentIntegrator.setPrompt("请将二维码对准扫描窗");
                 //设置扫描限时
                 intentIntegrator.setTimeout(30000);
+                //设置前置摄像头
+                intentIntegrator.setCameraId(1);
                 // 开始扫描
                 intentIntegrator.initiateScan();
             }
